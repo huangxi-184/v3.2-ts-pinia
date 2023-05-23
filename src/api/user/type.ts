@@ -1,36 +1,36 @@
 export interface loginForm {
-    username: string,
-    password: string
+  username: string
+  password: string
 }
 
 interface dataType {
-    token: string
+  token: string
 }
 
 export interface loginResponseData {
-    code: number,
-    data: dataType
+  code: number
+  data: dataType
 }
 
 // 定义服务器相应用户信息的数据类型.
 
 export interface userResponseData {
-    code: number,
-    data: user
+  code: number
+  data: user
 }
 
 interface user {
-    checkUser: userInfo
+  checkUser: userInfo
 }
 
 interface userInfo {
-    userId: number,
-    avatar: string,
-    username: string,
-    password: string,
-    desc: string,
-    roles: string[],
-    buttons: string[],
-    routes: string[],
-    token: string
+  userId: number
+  avatar: string
+  username: string
+  password: string
+  desc: string
+  roles: string[]
+  buttons: string[]
+  routes: string[]
+  token: string
 }
