@@ -1,12 +1,15 @@
 <script setup lang="ts">
-import SvgIcon from '@/components/SvgIcon/index.vue'
+
 </script>
 
 <template>
   <div>
-    <el-button type="danger" round>Danger</el-button>
-    <svg-icon name="phone" width="400px" height="400px"></svg-icon>
+    <h1>This is a header 1</h1>
   </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+h1 {
+  color: $base-color;
+}
+</style>
