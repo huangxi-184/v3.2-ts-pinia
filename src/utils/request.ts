@@ -3,7 +3,8 @@ import axios from 'axios' //axios.default instance with defaults for library
 import { ElMessage } from 'element-plus'
 
 const request = axios.create({
-  baseURL: import.meta.env.VITE_APP_BASE_API,
+  baseURL:
+    import.meta.env.VITE_APP_BASE_Url + import.meta.env.VITE_APP_BASE_API,
   timeout: 5000,
 })
 
@@ -19,7 +20,7 @@ request.interceptors.response.use(
   (error) => {
     //处理网络错误
     let msg = ''
-    let status = error.response.status
+    const status = error.response.status
     switch (status) {
       case 401:
         msg = 'token过期'

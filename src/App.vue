@@ -1,13 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+</script>
 
 <template>
   <div>
-    <h1>This is a header 1</h1>
+    <!-- <svg-icon width="200px" height="200px" name="phone" full="red"></svg-icon> -->
+    <router-view></router-view>
   </div>
 </template>
 
 <style scoped lang="scss">
-h1 {
-  color: $base-color;
-}
+
 </style>

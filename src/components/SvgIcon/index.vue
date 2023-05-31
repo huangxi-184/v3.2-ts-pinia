@@ -1,14 +1,14 @@
 <template>
-  <svg :style="{ width, height }">
+  <svg :style="{ width: width, height: height }">
     <use :xlink:href="prefix + name" :fill="color"></use>
   </svg>
 </template>
 
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   prefix: {
     type: String,
-    default: 'icon-',
+    default: '#icon-',
   },
   name: String,
   color: {

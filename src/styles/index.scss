@@ -1,4 +1,16 @@
 // 引入清楚的样式
 @import './reset.scss';
 
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+::-webkit-scrollbar-track {
+  background: $base-menu-background;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: yellowgreen;
+    border-radius: 10px;
+}
