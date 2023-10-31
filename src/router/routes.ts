@@ -32,18 +32,26 @@ export const constantRoute = [
           icon: 'HomeFilled',
         },
       },
+      {
+        //404
+        path: '/404',
+        component: () => import('@/views/404/index.vue'),
+        name: '404',
+        meta: {
+          title: '404',
+          hidden: true,
+          icon: 'DocumentDelete',
+        },
+      },
+      {
+        path: '/:pathMatch(.*)*',
+        redirect: '/404',
+        name: 'Screen',
+        meta: {
+          hidden: false,
+        },
+      },
     ],
-  },
-  {
-    //404
-    path: '/404',
-    component: () => import('@/views/404/index.vue'),
-    name: '404',
-    meta: {
-      title: '404',
-      hidden: true,
-      icon: 'DocumentDelete',
-    },
   },
   {
     path: '/screen',
